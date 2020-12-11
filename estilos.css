@@ -1,0 +1,39 @@
+.calc{
+
+    display:inline-block;
+    margin: 30px;
+    background: darkblue;
+
+    position: relative;
+    left: 450px;
+    top: 0px;
+
+
+
+}
+
+button{
+display: block;
+margin: 4px;
+padding: 40px;
+border-radius: 5px;
+font-size: 30px;
+
+
+}
+
+
+
+#resultado{
+
+    display: block;
+
+    background-color: rgb(43, 38, 38);
+    margin: 10px;
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}

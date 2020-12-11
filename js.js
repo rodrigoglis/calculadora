@@ -142,7 +142,7 @@ function start() {
      division.onclick =  function (e) {
 
         operadoresA = resultado.textContent;
-        operacion = "+";
+        operacion = "/";
         limpiar();
 
          
@@ -152,34 +152,62 @@ function start() {
     igual.onclick =  function (e) {
 
         operadoresB = resultado.textContent;
-        operacion = "=";
-        limpiar();
+        
+        resolver();
 
 
          
      }
 
-     limpiar.function() {
+     function  limpiar() {
 
         resultado.textContent + "";
          
      }
 
-     resetear.function() {
-
-        resultado.textContent + "";
-        operadoresA = 0;
-    
-        operadoresBç = 0;
-        operacion = "";
-         
-     }
+     function resetear() {
+         resultado.textContent + "";
+         operadoresA = 0 ;
+         operadoresB =  0 ;
+         operacion= ""; 
+     
+     
+    }
 
 
     //  las operaciones de los resultados
 
 
-    function resolver() {}
+    function resolver() {
+        let resl = 0;
+
+        switch (operacion) {
+
+            case "+":
+
+            resl = parseFloat(operadoresA) + parseFloat(operadoresA)
+             break;
+
+            case "-":
+
+            resl = parseFloat(operadoresA) - parseFloat(operadoresA)
+             break;
+
+            case "*":
+
+            resl = parseFloat(operadoresA) * parseFloat(operadoresA)
+             break;
+
+            case "/":
+
+            resl = parseFloat(operadoresA) / parseFloat(operadoresA)
+             break;
+        }
+        resetear();
+        resultado.textContent =resl;
+        
+
+    }
 };
 
 
